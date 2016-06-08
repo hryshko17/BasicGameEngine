@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{76053a48-57cb-441b-b1b4-613696e02bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Core">
+      <UniqueIdentifier>{5233911e-dc5a-4772-b603-2a07dd49bd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{8007e191-75b5-4e16-9563-116942c0c8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Renderer">
+      <UniqueIdentifier>{2b7628b3-2259-4cb3-bdfe-d9ff18714dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Utilities">
+      <UniqueIdentifier>{49fe7f98-8e15-4980-a9f3-51e6f44f857a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Input">
+      <UniqueIdentifier>{8c13d4da-3607-40e2-91b8-4971f7023646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Asset Manager">
+      <UniqueIdentifier>{e4e6a4cb-a480-42a0-89e8-4098529a8605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Renderer\Shaders">
+      <UniqueIdentifier>{78e253fb-8e99-4398-b4a3-396983988b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Camera">
+      <UniqueIdentifier>{64587f51-3fb7-4d71-a0c3-f74921c2d87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Math Library">
+      <UniqueIdentifier>{89fcbbc3-37ef-4c06-a726-cdd1cfe10187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Object Manager">
+      <UniqueIdentifier>{e26123bc-31d6-4bf5-a1bd-e340e8aed270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects">
+      <UniqueIdentifier>{73506d66-0b12-447b-8560-83288a957606}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Game\Core\Main.cpp">
+      <Filter>Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Renderer\Renderer.cpp">
+      <Filter>Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Input\InputManager.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Asset Manager\AssetManager.cpp">
+      <Filter>Engine\Asset Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Renderer\RenderMesh.cpp">
+      <Filter>Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Core\stdafx.cpp">
+      <Filter>Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Asset Manager\DDSTextureLoader.cpp">
+      <Filter>Engine\Asset Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Core\Game.cpp">
+      <Filter>Game\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Camera\Camera.cpp">
+      <Filter>Game\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Utilities\Time.cpp">
+      <Filter>Engine\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Input\Keyboard.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Math Library\MathLibrary.cpp">
+      <Filter>Engine\Math Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Math Library\Vector3D.cpp">
+      <Filter>Engine\Math Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Math Library\Matrix4x4.cpp">
+      <Filter>Engine\Math Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Object Manager\ObjectManager.cpp">
+      <Filter>Engine\Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Object Manager\Object.cpp">
+      <Filter>Engine\Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Objects\GameObject.cpp">
+      <Filter>Game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Utilities\Geometry.cpp">
+      <Filter>Engine\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Engine\Renderer\Renderer.h">
+      <Filter>Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Input\InputManager.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Asset Manager\AssetManager.h">
+      <Filter>Engine\Asset Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Core\stdafx.h">
+      <Filter>Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Renderer\RenderMesh.h">
+      <Filter>Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Asset Manager\DDSTextureLoader.h">
+      <Filter>Engine\Asset Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Core\Game.h">
+      <Filter>Game\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Camera\Camera.h">
+      <Filter>Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utilities\Time.h">
+      <Filter>Engine\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Input\Keyboard.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math Library\MathLibrary.h">
+      <Filter>Engine\Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math Library\Vector3D.h">
+      <Filter>Engine\Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Math Library\Matrix4x4.h">
+      <Filter>Engine\Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Object Manager\ObjectManager.h">
+      <Filter>Engine\Object Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Object Manager\Object.h">
+      <Filter>Engine\Object Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Objects\GameObject.h">
+      <Filter>Game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Utilities\Geometry.h">
+      <Filter>Engine\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Engine\Renderer\Shaders\Standard3DVS.hlsl">
+      <Filter>Engine\Renderer\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Engine\Renderer\Shaders\Standard3DPS.hlsl">
+      <Filter>Engine\Renderer\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Engine\Renderer\Shaders\StandardSkyBoxVS.hlsl">
+      <Filter>Engine\Renderer\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Engine\Renderer\Shaders\StandardSkyBoxPS.hlsl">
+      <Filter>Engine\Renderer\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

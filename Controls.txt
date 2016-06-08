@@ -1,0 +1,9 @@
+Controls:
+W - Forward
+S - Backward
+A - Left
+D - Right
+E - Down
+Q - Up
+Escape - Close Program
+Mouse movement will rotate left and right

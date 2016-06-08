@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Engine\Asset Manager\AssetManager.cpp" />
+    <ClCompile Include="..\Engine\Asset Manager\DDSTextureLoader.cpp" />
+    <ClCompile Include="..\Engine\Input\InputManager.cpp" />
+    <ClCompile Include="..\Engine\Input\Keyboard.cpp" />
+    <ClCompile Include="..\Engine\Math Library\MathLibrary.cpp" />
+    <ClCompile Include="..\Engine\Math Library\Matrix4x4.cpp" />
+    <ClCompile Include="..\Engine\Math Library\Vector3D.cpp" />
+    <ClCompile Include="..\Engine\Object Manager\Object.cpp" />
+    <ClCompile Include="..\Engine\Object Manager\ObjectManager.cpp" />
+    <ClCompile Include="..\Engine\Renderer\Renderer.cpp" />
+    <ClCompile Include="..\Engine\Renderer\RenderMesh.cpp" />
+    <ClCompile Include="..\Engine\Utilities\Geometry.cpp" />
+    <ClCompile Include="..\Engine\Utilities\Time.cpp" />
+    <ClCompile Include="..\Game\Camera\Camera.cpp" />
+    <ClCompile Include="..\Game\Core\Game.cpp" />
+    <ClCompile Include="..\Game\Core\Main.cpp" />
+    <ClCompile Include="..\Game\Core\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Game\Core\stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Game\Core\stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\Game\Objects\GameObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Engine\Asset Manager\AssetManager.h" />
+    <ClInclude Include="..\Engine\Asset Manager\DDSTextureLoader.h" />
+    <ClInclude Include="..\Engine\Input\InputManager.h" />
+    <ClInclude Include="..\Engine\Input\Keyboard.h" />
+    <ClInclude Include="..\Engine\Math Library\MathLibrary.h" />
+    <ClInclude Include="..\Engine\Math Library\Matrix4x4.h" />
+    <ClInclude Include="..\Engine\Math Library\Vector3D.h" />
+    <ClInclude Include="..\Engine\Object Manager\Object.h" />
+    <ClInclude Include="..\Engine\Object Manager\ObjectManager.h" />
+    <ClInclude Include="..\Engine\Renderer\Renderer.h" />
+    <ClInclude Include="..\Engine\Renderer\RenderMesh.h" />
+    <ClInclude Include="..\Engine\Utilities\Geometry.h" />
+    <ClInclude Include="..\Engine\Utilities\Time.h" />
+    <ClInclude Include="..\Game\Camera\Camera.h" />
+    <ClInclude Include="..\Game\Core\Game.h" />
+    <ClInclude Include="..\Game\Core\stdafx.h" />
+    <ClInclude Include="..\Game\Objects\GameObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Engine\Renderer\Shaders\Standard3DPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).cso</ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\Engine\Renderer\Shaders\Standard3DVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).cso</ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\Engine\Renderer\Shaders\StandardSkyBoxPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="..\Engine\Renderer\Shaders\StandardSkyBoxVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{196FF0E0-ADD2-4540-91F7-215170050182}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>$(SolutionDir)\Game\Core\stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <VariableName>%(Filename)</VariableName>
+      <HeaderFileOutput>$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput>$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>$(SolutionDir)\Game\Core\stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <VariableName>%(Filename)</VariableName>
+      <HeaderFileOutput>$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).csh</HeaderFileOutput>
+      <ObjectFileOutput>$(SolutionDir)\Engine\Renderer\Shaders\Compiled Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
